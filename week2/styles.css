@@ -23,3 +23,15 @@
 .part4 > p{
     color: green;
 }
+
+.csym019{
+    background-color: aquamarine;
+    width: 50%;
+    float: left;
+}
+
+.csym015{
+    background-color: yellow;
+    width: 50%;
+    float: left;
+}
