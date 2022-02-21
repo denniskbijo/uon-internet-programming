@@ -21,7 +21,8 @@ nav{
 }
 
 a{
-    margin: 10em;
+    padding: 4em;
+    border: 5em;
 }
 
 main{
