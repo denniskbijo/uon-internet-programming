@@ -44,31 +44,39 @@
     border-radius: 30px;
 }
 
-.heading{
-    min-height: 30%;
+body{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header"
+    "nav main aside"
+    "footer footer footer";
+}
+
+header{
     background-color: blueviolet;
+    grid-area: header;
+    color: white;
+    padding: 4em;
 }
 
-.body{
-    min-height: 70%;
+nav{
     background-color: yellow;
+    grid-area: nav;
 }
 
-.links{
-    min-width: 30%;
-    float: left;
+main{
+    background-color: blue;
+    color: white;
+    grid-area: main;
 }
 
-.body > p{
-    min-width: 50%;
+aside{
+    background-color: lightgreen;
+    grid-area: aside;
 }
 
-.righthandside{
-    min-width: 20%;
-}
-
-.footer{
-    min-height: 10%;
+footer{
     background-color: green;
+    grid-area: footer;
 }
-
