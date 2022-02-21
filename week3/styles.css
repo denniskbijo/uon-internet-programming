@@ -18,6 +18,11 @@ header{
 nav{
     background-color: yellow;
     grid-area: nav;
+    padding: 4em;
+}
+
+a{
+    margin: 5em;
 }
 
 main{
