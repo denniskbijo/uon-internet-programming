@@ -7,6 +7,8 @@ function print5(){
 function changeHeadingValue(){
     var heading = document.getElementById('pageHeading');
     heading.firstChild.nodeValue = 'New Heading'; 
+    var paragraph = document.getElementById('paragraph');
+    paragraph.firstChild.nodeValue = 'New Paragraph. ';
 }
 
 document.addEventListener('DOMContentLoaded', changeHeadingValue);
