@@ -1,6 +1,6 @@
 function print5(){
     for(var i=1;i<=5;i++){
-        alert(i);
+        console.log(i);
     }
 }
 
