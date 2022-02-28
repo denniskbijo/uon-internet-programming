@@ -11,4 +11,4 @@ function changeHeadingValue(){
     paragraph.firstChild.nodeValue = 'New Paragraph. ';
 }
 
-document.addEventListener('DOMContentLoaded', changeHeadingValue);
+document.addEventListener('click', changeHeadingValue);
