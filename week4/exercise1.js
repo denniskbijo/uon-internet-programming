@@ -1,8 +1,8 @@
 function registerEvents(){
     var element = document.getElementById('pageHeading');
-    element.addEventListener('mouseenter', changeHeadingValue);
+    element.addEventListener('mouseleave', changeHeadingValue);
     element = document.getElementById('paragraph');
-    element.addEventListener('mouseenter', changeParagraphValue);
+    element.addEventListener('mouseleave', changeParagraphValue);
 
 }
 
