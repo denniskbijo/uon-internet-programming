@@ -1,14 +1,19 @@
-function print5(){
-    for(var i=1;i<=5;i++){
-        console.log(i);
-    }
+function registerEvents(){
+    var element = document.getElementById('pageHeading');
+    element.addEventListener('click', changeHeadingValue);
+    element = document.getElementById('paragraph');
+    element.addEventListener('click', changeParagraphValue);
+
 }
 
 function changeHeadingValue(){
     var heading = document.getElementById('pageHeading');
     heading.firstChild.nodeValue = 'New Heading'; 
+}
+
+function changeParagraphValue(){
     var paragraph = document.getElementById('paragraph');
     paragraph.firstChild.nodeValue = 'New Paragraph. ';
 }
 
-document.addEventListener('click', changeHeadingValue);
+document.addEventListener('DOMContentLoaded', registerEvents);
