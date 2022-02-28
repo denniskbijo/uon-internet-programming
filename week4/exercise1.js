@@ -4,5 +4,9 @@ function print5(){
     }
 }
 
-print5();
-print5();
+function changeHeadingValue(){
+    var heading = document.getElementById('pageHeading');
+    heading.firstChild.nodeValue = 'New Heading'; 
+}
+
+document.addEventListener('DOMContentLoaded', changeHeadingValue);
