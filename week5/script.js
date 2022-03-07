@@ -7,18 +7,20 @@ function registerEvents() {
 function myKeyDown(event) {
   console.log(event.keyCode);
   if (event.keyCode == 37) {
-    moveButtonLeft();
+    var leftTimer = setInterval(moveButtonLeft, 100);
   }
   if (event.keyCode == 39) {
-    moveButtonRight();
+    setInterval(moveButtonRight, 100);
   }
+  
   //Up button
   if (event.keyCode == 38) {
-    moveButtonUp();
+    setInterval(moveButtonUp, 100);
   }
+  
   if (event.keyCode == 40) {
-    moveButtonDown();
-  }
+    setInterval(moveButtonDown, 100);
+}
 }
 
 function moveButtonDown() {
