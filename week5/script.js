@@ -12,13 +12,23 @@ function myKeyDown(event) {
   if (event.keyCode == 39) {
     moveButtonRight();
   }
+  //Up button
+  if(event.keyCode == 38){
+      moveButtonUp();
+  }
+}
+
+function moveButtonUp() {
+  var button = document.getElementById("circle");
+  var offsetValue = button.offsetTop;
+  button.style.top = offsetValue - 10 + "px";
 }
 
 function moveButtonLeft() {
-  var button = document.getElementById("circle");
-  var buttonOffsetLeft = button.offsetLeft;
-  button.style.left = buttonOffsetLeft - 10 + "px";
-}
+    var button = document.getElementById("circle");
+    var buttonOffsetLeft = button.offsetLeft;
+    button.style.left = buttonOffsetLeft - 10 + "px";
+  }
 
 function moveButtonRight() {
   var button = document.getElementById("circle");
