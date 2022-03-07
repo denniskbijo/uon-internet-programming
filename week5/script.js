@@ -1,7 +1,14 @@
 function registerEvents(){
     var button = document.getElementById('circle');
-    document.addEventListener('keydown', moveButton);
+    document.addEventListener('keydown', myKeyDown);
     button.style.opacity = '1';
+}
+
+function myKeyDown(event){
+    console.log(event.keyCode);
+    if(event.keyCode === 37){
+        moveButton();
+    }
 }
 
 function moveButton(){
