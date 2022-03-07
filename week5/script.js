@@ -13,9 +13,18 @@ function myKeyDown(event) {
     moveButtonRight();
   }
   //Up button
-  if(event.keyCode == 38){
-      moveButtonUp();
+  if (event.keyCode == 38) {
+    moveButtonUp();
   }
+  if (event.keyCode == 40) {
+    moveButtonDown();
+  }
+}
+
+function moveButtonDown() {
+  var button = document.getElementById("circle");
+  var offsetValue = button.offsetTop;
+  button.style.top = offsetValue + 10 + "px";
 }
 
 function moveButtonUp() {
@@ -25,10 +34,10 @@ function moveButtonUp() {
 }
 
 function moveButtonLeft() {
-    var button = document.getElementById("circle");
-    var buttonOffsetLeft = button.offsetLeft;
-    button.style.left = buttonOffsetLeft - 10 + "px";
-  }
+  var button = document.getElementById("circle");
+  var buttonOffsetLeft = button.offsetLeft;
+  button.style.left = buttonOffsetLeft - 10 + "px";
+}
 
 function moveButtonRight() {
   var button = document.getElementById("circle");
