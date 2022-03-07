@@ -6,15 +6,25 @@ function registerEvents(){
 
 function myKeyDown(event){
     console.log(event.keyCode);
-    if(event.keyCode === 37){
-        moveButton();
+    if(event.keyCode == 37){
+        moveButtonLeft();
     }
+    if(event.keyCode == 39){
+        moveButtonRight();
+    }
+
 }
 
-function moveButton(){
+function moveButtonLeft(){
     var button = document.getElementById('circle');
     var buttonOffsetLeft = button.offsetLeft;
     button.style.left = buttonOffsetLeft - 10 + 'px';
+}
+
+function moveButtonRight(){
+    var button = document.getElementById('circle');
+    var buttonOffsetLeft = button.offsetLeft;
+    button.style.left = buttonOffsetLeft + 10 + 'px';
 }
 
 function setTimer(){
