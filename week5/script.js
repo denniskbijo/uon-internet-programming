@@ -5,7 +5,7 @@ function registerEvents(){
 }
 
 function setTimer(){
-    setInterval(changeButtonStyle, 1000);
+    setInterval(changeButtonStyle, 100);
 }
 
 function changeButtonStyle(){
