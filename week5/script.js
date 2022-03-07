@@ -11,7 +11,7 @@ function setTimer(){
 function changeButtonStyle(){
     var button = document.getElementById('circle');
     console.log(button.style.opacity);
-    button.style.opacity = parseFloat(button.style.opacity) - 0.1;
+    button.style.opacity = parseFloat(button.style.opacity) - 0.01;
 }
 
 document.addEventListener('DOMContentLoaded', registerEvents);
