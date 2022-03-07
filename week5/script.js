@@ -1,6 +1,6 @@
 function registerEvents(){
     var button = document.getElementById('circle');
-    button.addEventListener('click', moveButton);
+    document.addEventListener('keydown', moveButton);
     button.style.opacity = '1';
 }
 
