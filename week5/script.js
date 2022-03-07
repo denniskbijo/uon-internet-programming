@@ -4,7 +4,8 @@ function registerEvents(){
 }
 
 function getTextAlert(){
-    alert('The button was pressed!');
+    var button = document.getElementById('circle');
+    button.style.backgroundColor = 'blue';
 }
 
 document.addEventListener('DOMContentLoaded', registerEvents);
