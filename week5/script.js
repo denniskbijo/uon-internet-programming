@@ -1,13 +1,13 @@
 function registerEvents(){
     var button = document.getElementById('circle');
     button.addEventListener('click', changeButtonStyle);
-    button.style.opacity = '1';
+    button.style.opacity = '0.2';
 }
 
 function changeButtonStyle(){
     var button = document.getElementById('circle');
-    button.style.backgroundColor = 'blue';
-    button.style.opacity = '0.5';
+    console.log(button.style.opacity);
+    button.style.opacity = parseFloat(button.style.opacity) + 0.1;
 }
 
 document.addEventListener('DOMContentLoaded', registerEvents);
