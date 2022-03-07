@@ -3,23 +3,26 @@ function registerEvents() {
   document.addEventListener("keydown", myKeyDown);
   button.style.opacity = "1";
 }
+//global variable
+var timer;
 
 function myKeyDown(event) {
   console.log(event.keyCode);
+  clearInterval(timer);
   if (event.keyCode == 37) {
-    var leftTimer = setInterval(moveButtonLeft, 100);
+    timer = setInterval(moveButtonLeft, 100);
   }
   if (event.keyCode == 39) {
-    setInterval(moveButtonRight, 100);
+    timer = setInterval(moveButtonRight, 100);
   }
   
   //Up button
   if (event.keyCode == 38) {
-    setInterval(moveButtonUp, 100);
+    timer = setInterval(moveButtonUp, 100);
   }
   
   if (event.keyCode == 40) {
-    setInterval(moveButtonDown, 100);
+    timer = setInterval(moveButtonDown, 100);
 }
 }
 
