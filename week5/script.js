@@ -1,7 +1,11 @@
 function registerEvents(){
     var button = document.getElementById('circle');
-    button.addEventListener('click', changeButtonStyle);
+    button.addEventListener('click', setTimer);
     button.style.opacity = '1';
+}
+
+function setTimer(){
+    setInterval(changeButtonStyle, 1000);
 }
 
 function changeButtonStyle(){
