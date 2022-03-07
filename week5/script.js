@@ -1,7 +1,13 @@
 function registerEvents(){
     var button = document.getElementById('circle');
-    button.addEventListener('click', setTimer);
+    button.addEventListener('click', moveButton);
     button.style.opacity = '1';
+}
+
+function moveButton(){
+    var button = document.getElementById('circle');
+    var buttonOffsetLeft = button.offsetLeft;
+    button.style.left = buttonOffsetLeft - 10 + 'px';
 }
 
 function setTimer(){
