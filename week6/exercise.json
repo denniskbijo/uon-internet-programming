@@ -25,6 +25,19 @@
                 "email": "denn@yahoo.com"
             },
             "observations": "One Osprey. Above the wooded area. Hunting for food."
+        },
+        {
+            "id": 3,
+            "animal": "Hare",
+            "number": 1,
+            "location": "North Woods, Oldham",
+            "date": "2017-09-24",
+            "time": "10:30:00",
+            "observer": {
+                "name": "Dennis",
+                "email": "denn@yahoo.com"
+            },
+            "observations": "A single brown Hare. Adult. Near the bushes in the wooded area. Foraging for food."
         }
     ]
 }
