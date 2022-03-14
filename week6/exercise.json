@@ -1,15 +1,30 @@
 {
-  "sightings": {
-    "id": 1,
-    "animal": "Pine Martin",
-    "number": 4,
-    "location": "Marshall Woods, Reneham",
-    "date": "2015-09-24",
-    "time": "09:30:00",
-    "observer": {
-        "name": "Gregory Dmitradis",
-        "email":"gdim@yahoo.com"
-    },
-    "observations": "Four pine martins. 1 adult. 3 juveniles. In wooded area. Adult appeared to be mother. Foraging for food."
-  }
+    "sightings": [
+        {
+            "id": 1,
+            "animal": "Pine Martin",
+            "number": 4,
+            "location": "Marshall Woods, Reneham",
+            "date": "2015-09-24",
+            "time": "09:30:00",
+            "observer": {
+                "name": "Gregory Dmitradis",
+                "email": "gdim@yahoo.com"
+            },
+            "observations": "Four pine martins. 1 adult. 3 juveniles. In wooded area. Adult appeared to be mother. Foraging for food."
+        },
+        {
+            "id": 2,
+            "animal": "Osprey",
+            "number": 1,
+            "location": "Marshall Woods, Reneham",
+            "date": "2015-09-24",
+            "time": "10:30:00",
+            "observer": {
+                "name": "Dennis",
+                "email": "denn@yahoo.com"
+            },
+            "observations": "One Osprey. Above the wooded area. Hunting for food."
+        }
+    ]
 }
