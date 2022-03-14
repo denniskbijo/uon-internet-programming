@@ -14,7 +14,7 @@
                     },
                     "animal":{
                         "type":"string",
-                        "enum": ["Beaver", "Hare", "Pine Martin", "Hare", "Snowy Owl, Otter"]
+                        "enum": ["Beaver", "Hare", "Pine Martin", "Osprey", "Snowy Owl", "Otter"]
                     },
                     "location":{
                         "type":"string"
