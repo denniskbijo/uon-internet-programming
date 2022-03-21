@@ -34,6 +34,7 @@ function showContents(){
         document.getElementById("countylist").innerHTML = tableMarkup;
     }else{
         //Handle error
+        document.getElementById("updatemessage").innerHTML = "Couldn't get a success response";
     }
 }
 }
