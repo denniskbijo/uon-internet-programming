@@ -29,9 +29,9 @@ function showContents(){
         console.log(counties);
         let tableMarkup = "";
         counties.forEach(element => {
-            tableMarkup+= `<tr><td>${element.name}<\td><\tr>`;
+            tableMarkup+= `<tr><td>${element.name}</td></tr>`;
         });
-        
+        document.getElementById("countylist").innerHTML = tableMarkup;
     }else{
         //Handle error
     }
