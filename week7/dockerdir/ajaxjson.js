@@ -22,4 +22,18 @@ function makeAjaxRequest(){
 
 function showContents(){
  console.log("showContns");
+ if(xhr.readyState===4){
+    if(xhr.status === 200){
+        let data = JSON.parse(xhr.responseText);
+        const counties = data.counties;
+        console.log(counties);
+        let tableMarkup = "";
+        counties.forEach(element => {
+            tableMarkup+= `<tr><td>${element.name}<\td><\tr>`;
+        });
+        
+    }else{
+        //Handle error
+    }
+}
 }
